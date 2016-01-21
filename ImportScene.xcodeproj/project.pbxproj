@@ -65,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		94E7B8F31C50752300DA4BF3 /* fbxsdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fbxsdk.h; path = "../../../Applications/Autodesk/FBX SDK/2016.1.2/include/fbxsdk.h"; sourceTree = "<group>"; };
 		E63B248A1966AA0200595E90 /* ImportScene.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImportScene.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E63B248D1966AA0200595E90 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E63B248F1966AA0200595E90 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -193,6 +194,7 @@
 		E63B248C1966AA0200595E90 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				94E7B8F31C50752300DA4BF3 /* fbxsdk.h */,
 				E63B24D11966B8E300595E90 /* libiconv.dylib */,
 				E63B248D1966AA0200595E90 /* Foundation.framework */,
 				E63B248F1966AA0200595E90 /* CoreGraphics.framework */,
@@ -506,7 +508,7 @@
 		E63B24BD1966AA0200595E90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -535,6 +537,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"/Applications/Autodesk/FBX SDK/2016.1.2/\"/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -545,7 +548,7 @@
 		E63B24BE1966AA0200595E90 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -568,6 +571,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"/Applications/Autodesk/FBX SDK/2016.1.2/\"/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -583,19 +587,21 @@
 				"ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImportScene/ImportScene-Prefix.pch";
 				INFOPLIST_FILE = "ImportScene/ImportScene-Info.plist";
 				"OTHER_LDFLAGS[sdk=iphoneos*]" = (
 					"-ObjC",
-					"\"/Applications/Autodesk/FBX SDK/2015.1/lib/ios-armv7/debug/libfbxsdk.a\"",
+					"\"/Applications/Autodesk/FBX SDK/2016.1.2/lib/ios-armv7/debug/libfbxsdk.a\"",
 				);
 				"OTHER_LDFLAGS[sdk=iphonesimulator*]" = (
 					"-ObjC",
-					"\"/Applications/Autodesk/FBX SDK/2015.1/lib/ios-i386/debug/libfbxsdk.a\"",
+					"\"/Applications/Autodesk/FBX SDK/2016.1.2/lib/ios-i386/debug/libfbxsdk.a\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"/Applications/Autodesk/FBX SDK/2015.1/include\"";
+				USER_HEADER_SEARCH_PATHS = "\"/Applications/Autodesk/FBX SDK/2016.1.2/include\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -608,19 +614,21 @@
 				"ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImportScene/ImportScene-Prefix.pch";
 				INFOPLIST_FILE = "ImportScene/ImportScene-Info.plist";
 				"OTHER_LDFLAGS[sdk=iphoneos*]" = (
 					"-ObjC",
-					"\"/Applications/Autodesk/FBX SDK/2015.1/lib/ios-armv7/debug/libfbxsdk.a\"",
+					"\"/Applications/Autodesk/FBX SDK/2016.1.2/lib/ios-armv7/debug/libfbxsdk.a\"",
 				);
 				"OTHER_LDFLAGS[sdk=iphonesimulator*]" = (
 					"-ObjC",
-					"\"/Applications/Autodesk/FBX SDK/2015.1/lib/ios-i386/release/libfbxsdk.a\"",
+					"\"/Applications/Autodesk/FBX SDK/2016.1.2/lib/ios-i386/release/libfbxsdk.a\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"/Applications/Autodesk/FBX SDK/2015.1/include\"";
+				USER_HEADER_SEARCH_PATHS = "\"/Applications/Autodesk/FBX SDK/2016.1.2/include\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -684,6 +692,7 @@
 				E63B24C11966AA0200595E90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E63B24C21966AA0200595E90 /* Build configuration list for PBXNativeTarget "ImportSceneTests" */ = {
 			isa = XCConfigurationList;
@@ -692,6 +701,7 @@
 				E63B24C41966AA0200595E90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
